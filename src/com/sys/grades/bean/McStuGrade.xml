@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.sys.grades.bean">
+	<class name="McStuGrade" table="MC_STU_GRADE">
+		<composite-id>
+			<key-property name="sno" column="SNO" type="string" />
+			<key-property name="coursenum" column="COURSE_SNO" type="string" />
+		</composite-id>
+		<property name="coursename" column="COURSE_NAME" type="java.lang.String" />
+		<property name="grade" column="GRADE" type="java.lang.String" />
+		<property name="coursecredit" column="COURSE_CREDIT" type="double" />
+		<property name="elective" column="ELECTIVE" type="java.lang.String" />
+		<property name="coursetype" column="COURSE_TYPE" type="java.lang.String" />
+		<property name="teachername" column="TEACHER_NAME" type="java.lang.String" />
+		<property name="testtype" column="TEST_TYPE" type="java.lang.String" />
+		<property name="note" column="NOTE" type="java.lang.String" />
+		<property name="date" column="TEST_DATE" type="java.util.Date" />
+	</class>
+
+</hibernate-mapping>

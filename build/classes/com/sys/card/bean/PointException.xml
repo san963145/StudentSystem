@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.card.bean"	>
+
+ <class name="PointException" table="POINT_EXCEPTION">   
+  <id name="sno" type="java.lang.String">
+    <generator class="assigned"/>
+  </id>
+  <property name="info" column="INFO" type="java.lang.String"/>
+ </class>
+ 
+</hibernate-mapping>

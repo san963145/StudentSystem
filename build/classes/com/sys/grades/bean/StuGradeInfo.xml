@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.sys.grades.bean">
+	<class name="StuGradeInfo" table="STUGRADEINFO">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="sequence">
+				<param name="sequence">ID</param>
+			</generator>
+		</id>
+		<property name="sno" column="SNO" type="java.lang.String" />
+		<property name="semester" column="SEMESTER" type="int" />
+		<property name="coursecredit" column="COURSECREDIT" type="java.lang.Double" />
+		<property name="grade" column="GRADE" type="java.lang.String" />
+		<property name="elective" column="ELECTIVE" type="java.lang.String" />
+		<property name="teachername" column="TEACHERNAME" type="java.lang.String" />
+		<property name="testtype" column="TESTTYPE" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

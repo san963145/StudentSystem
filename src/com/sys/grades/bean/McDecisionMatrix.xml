@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.grades.bean"	>
+
+ <class name="McDecisionMatrix" table="MC_DECISION_MATRIX">   
+ <composite-id>  
+            <key-property name="collegename" column="COLLEGE_NAME" type="string"/>  
+            <key-property name="majoynum" column="MAJOR_NUMBER" type="string"/>  
+            <key-property name="grade" column="GRADE" type="int"/>  
+  </composite-id>
+ <property name="T1" column="T1" type="double"/>
+ <property name="T2" column="T2" type="double"/> 
+ <property name="T3" column="T3" type="double"/>
+ <property name="T4" column="T4" type="double"/>
+ </class>
+ 
+</hibernate-mapping>

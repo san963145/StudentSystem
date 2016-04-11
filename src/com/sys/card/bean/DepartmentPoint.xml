@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.card.bean"	>
+
+ <class name="DepartmentPoint" table="DEPARTMENT_POINT">   
+  <composite-id>  
+            <key-property name="department" column="department" type="string"/>  
+            <key-property name="grade" column="grade" type="int"/>  
+  </composite-id>
+  <property name="total_Q1" column="TOTAL_Q1" type="double"/>
+  <property name="total_Q2" column="TOTAL_Q2" type="double"/> 
+  <property name="total_Q3" column="TOTAL_Q3" type="double"/>
+  <property name="total_MAX" column="TOTAL_MAX" type="double"/>
+  <property name="total_MEAN" column="TOTAL_MEAN" type="double"/>
+  <property name="total_SD" column="TOTAL_SD" type="double"/>
+  <property name="count_Q1" column="COUNT_Q1" type="double"/>
+  <property name="count_Q2" column="COUNT_Q2" type="double"/> 
+  <property name="count_Q3" column="COUNT_Q3" type="double"/>
+  <property name="count_MAX" column="COUNT_MAX" type="double"/>
+  <property name="count_MEAN" column="COUNT_MEAN" type="double"/>
+  <property name="count_SD" column="COUNT_SD" type="double"/>
+  <property name="ave_Q1" column="AVE_Q1" type="double"/>
+  <property name="ave_Q2" column="AVE_Q2" type="double"/> 
+  <property name="ave_Q3" column="AVE_Q3" type="double"/>
+  <property name="ave_MAX" column="AVE_MAX" type="double"/>
+  <property name="ave_MEAN" column="AVE_MEAN" type="double"/>
+  <property name="ave_SD" column="AVE_SD" type="double"/>
+  <property name="lunch_Q1" column="LUNCH_Q1" type="double"/>
+  <property name="lunch_Q2" column="LUNCH_Q2" type="double"/> 
+  <property name="lunch_Q3" column="LUNCH_Q3" type="double"/>
+  <property name="lunch_MAX" column="LUNCH_MAX" type="double"/>
+  <property name="lunch_MEAN" column="LUNCH_MEAN" type="double"/>
+  <property name="lunch_SD" column="LUNCH_SD" type="double"/>
+  <property name="lunch_CNTQ1" column="LUNCH_CNTQ1" type="double"/>
+  <property name="lunch_CNTQ2" column="LUNCH_CNTQ2" type="double"/> 
+  <property name="lunch_CNTQ3" column="LUNCH_CNTQ3" type="double"/>
+  <property name="lunch_CNTMAX" column="LUNCH_CNTMAX" type="double"/>
+  <property name="lunch_CNTMEAN" column="LUNCH_CNTMEAN" type="double"/>
+  <property name="lunch_CNTSD" column="LUNCH_CNTSD" type="double"/>
+  <property name="lunch_AVGQ1" column="LUNCH_AVGQ1" type="double"/>
+  <property name="lunch_AVGQ2" column="LUNCH_AVGQ2" type="double"/> 
+  <property name="lunch_AVGQ3" column="LUNCH_AVGQ3" type="double"/>
+  <property name="lunch_AVGMAX" column="LUNCH_AVGMAX" type="double"/>
+  <property name="lunch_AVGMEAN" column="LUNCH_AVGMEAN" type="double"/>
+  <property name="lunch_AVGSD" column="LUNCH_AVGSD" type="double"/>
+  <property name="supper_Q1" column="SUPPER_Q1" type="double"/>
+  <property name="supper_Q2" column="SUPPER_Q2" type="double"/> 
+  <property name="supper_Q3" column="SUPPER_Q3" type="double"/>
+  <property name="supper_MAX" column="SUPPER_MAX" type="double"/>
+  <property name="supper_MEAN" column="SUPPER_MEAN" type="double"/>
+  <property name="supper_SD" column="SUPPER_SD" type="double"/>
+  <property name="supper_CNTQ1" column="SUPPER_CNTQ1" type="double"/>
+  <property name="supper_CNTQ2" column="SUPPER_CNTQ2" type="double"/> 
+  <property name="supper_CNTQ3" column="SUPPER_CNTQ3" type="double"/>
+  <property name="supper_CNTMAX" column="SUPPER_CNTMAX" type="double"/>
+  <property name="supper_CNTMEAN" column="SUPPER_CNTMEAN" type="double"/>
+  <property name="supper_CNTSD" column="SUPPER_CNTSD" type="double"/>
+  <property name="supper_AVGQ1" column="SUPPER_AVGQ1" type="double"/>
+  <property name="supper_AVGQ2" column="SUPPER_AVGQ2" type="double"/> 
+  <property name="supper_AVGQ3" column="SUPPER_AVGQ3" type="double"/>
+  <property name="supper_AVGMAX" column="SUPPER_AVGMAX" type="double"/>
+  <property name="supper_AVGMEAN" column="SUPPER_AVGMEAN" type="double"/>
+  <property name="supper_AVGSD" column="SUPPER_AVGSD" type="double"/>
+ </class>
+</hibernate-mapping>

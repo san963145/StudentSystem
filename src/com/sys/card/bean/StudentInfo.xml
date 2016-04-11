@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.card.bean"	>
+
+ <class name="StudentInfo" table="STUDENT_INFO">   
+ <id name="sno" type="java.lang.String">
+   <generator class="assigned"/>
+ </id>
+ <property name="sname" column="SNAME" type="java.lang.String"/>
+ <property name="fromProvince" column="FROMPROVINCE" type="java.lang.String"/> 
+ <property name="department" column="DEPARTMENT" type="java.lang.String"/>
+ <property name="grade" column="GRADE" type="int"/>
+ <property name="classNo" column="CLASSNO" type="java.lang.String"/>
+ <property name="sex" column="SEX" type="java.lang.String"/>
+ <property name="people" column="PEOPLE" type="java.lang.String"/>
+ </class>
+ 
+</hibernate-mapping>

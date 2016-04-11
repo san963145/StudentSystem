@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.sys.grades.bean">
+	<class name="StuGradePrediction" table="STUGRADEPREDICTION">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="sequence">
+				<param name="sequence">ID</param>
+			</generator>
+		</id>
+		<property name="sno" column="SNO" type="java.lang.String" />
+		<property name="sname" column="SNAME" type="java.lang.String" />
+		<property name="gpa" column="GPA" type="java.lang.Double" />
+		<property name="risk" column="RISK" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

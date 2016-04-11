@@ -1,0 +1,43 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory >
+	
+	<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	<property name="hibernate.connection.url">jdbc:oracle:thin:@172.31.2.33:1529:ORCLSCHOOL</property>
+	<property name="hibernate.connection.username">StuSysUser</property>
+	<property name="hibernate.connection.password">StuSys12345678</property>
+
+	
+ 
+	<property name="hibernate.hbm2ddl.auto">update</property>
+	
+	<mapping resource="com/sys/manager/bean/User.xml"/>
+	<mapping resource="com/sys/manager/bean/Admin.xml"/>
+	<mapping resource="com/sys/card/bean/StudentPoint.xml"/>
+	<mapping resource="com/sys/card/bean/StudentInfo.xml"/>
+	<mapping resource="com/sys/card/bean/DepartmentPoint.xml"/>
+    <mapping resource="com/sys/card/bean/PointException.xml"/>
+    <mapping resource="com/sys/card/bean/MajorName.xml"/>
+	<mapping resource="com/sys/grades/bean/McStuGrade.xml"/>
+	<mapping resource="com/sys/grades/bean/McNewestGpa.xml"/>
+	<mapping resource="com/sys/grades/bean/McHistoryGpa.xml"/>
+	<mapping resource="com/sys/grades/bean/McDept.xml"/>
+	<mapping resource="com/sys/grades/bean/McDecisionMatrix.xml"/>
+	<mapping resource="com/sys/grades/bean/StuGradeInfo.xml"/>
+	<mapping resource="com/sys/grades/bean/Deptlocator.xml"/>
+	<mapping resource="com/sys/grades/bean/StuGradePrediction.xml"/>
+	<mapping resource="com/sys/grades/bean/GradeSearchByGroup.xml"/>
+	<mapping resource="com/sys/network/bean/NtWebsites.hbm.xml" />
+    <mapping resource="com/sys/network/bean/NtSubCategory.hbm.xml" />
+	<mapping resource="com/sys/network/bean/NtSecondaryCategory.hbm.xml" />
+	<mapping resource="com/sys/network/bean/NtRecordCount.hbm.xml" />
+	<mapping resource="com/sys/network/bean/NtMainCategory.hbm.xml" />
+	<mapping resource="com/sys/network/bean/WebsitesStatistics.hbm.xml" />
+	<mapping resource="com/sys/network/bean/NtGameTime.hbm.xml" />
+	<mapping resource="com/sys/network/bean/NtVideoTime.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

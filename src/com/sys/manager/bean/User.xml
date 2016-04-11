@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.manager.bean"	>
+
+ <class name="User" table="STUSYSUSER.USER_TB">   
+ <id name="userId" type="java.lang.String">
+   <generator class="assigned"/>
+ </id>
+ <property name="department" column="DEPARTMENT" type="java.lang.String"/> 
+ <property name="grade" column="GRADE" type="java.lang.String"/>
+ <property name="authority" column="AUTHORITY" type="java.lang.String"/>
+ <property name="comments" column="COMMENTS" type="java.lang.String"/>
+ </class>
+ 
+</hibernate-mapping>

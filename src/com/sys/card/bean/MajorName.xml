@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.card.bean"	>
+
+ <class name="MajorName" table="MAJOR_NAME">   
+  <id name="majorNum" type="java.lang.String">
+    <generator class="assigned"/>
+  </id>
+  <property name="majorName" column="MAJORNAME" type="java.lang.String"/>
+ </class>
+ 
+</hibernate-mapping>

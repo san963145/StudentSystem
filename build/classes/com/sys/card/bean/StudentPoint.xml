@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.card.bean"	>
+
+ <class name="StudentPoint" table="STUDENT_POINT">   
+ <id name="sno" type="java.lang.String">
+   <generator class="assigned"/>
+ </id>
+ <property name="gender" column="GENDER" type="java.lang.String"/>
+ <property name="hasScholarship" column="HASSCHOLARSHIP" type="java.lang.String"/> 
+ <property name="total" column="TOTAL" type="double"/>
+ <property name="count" column="COUNT" type="int"/>
+ <property name="average" column="AVERAGE" type="double"/>
+ <property name="lunchTTL" column="LUNCHTTL" type="double"/>
+ <property name="lunchCNT" column="LUNCHCNT" type="int"/>
+ <property name="lunchAVG" column="LUNCHAVG" type="double"/>   
+ <property name="supperTTL" column="SUPPERTTL" type="double"/>
+ <property name="supperCNT" column="SUPPERCNT" type="int"/>
+ <property name="supperAVG" column="SUPPERAVG" type="double"/> 
+ <property name="point" column="POINT" type="double"/>
+ </class>
+ 
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.grades.bean"	>
+
+ <class name="McNewestGpa" table="MC_NEWEST_GPA">   
+ <id name="sno" type="java.lang.String">
+   <generator class="assigned"/>
+ </id>
+ <property name="newestgpa" column="NEWEST_GPA" type="double"/>
+ <property name="failednum" column="FAILED_NUMBER" type="int"/> 
+ <property name="restudynum" column="RESTUDY_NUMBER" type="int"/>
+ </class>
+ 
+</hibernate-mapping>

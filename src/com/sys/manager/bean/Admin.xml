@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.manager.bean"	>
+
+ <class name="Admin" table="STUSYSUSER.ADMIN">   
+ <id name="userName" type="java.lang.String">
+   <generator class="assigned"/>
+ </id>
+ <property name="password" column="PASSWORD" type="java.lang.String"/> 
+ 
+ </class>
+ 
+</hibernate-mapping>

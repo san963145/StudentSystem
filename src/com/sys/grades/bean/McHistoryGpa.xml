@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping  package="com.sys.grades.bean"	>
+
+ <class name="McHistoryGpa" table="MC_HISTORY_GPA">   
+  <composite-id>  
+            <key-property name="sno" column="SNO" type="string"/>  
+            <key-property name="semester" column="SEMESTER" type="int"/>  
+  </composite-id>
+  <property name="gpasemester" column="GPA_SEMESTER" type="double"/>
+  <property name="averscoresmester" column="AVERAGE_SCORE_SEMESTER" type="double"/> 
+  <property name="selectcreditsemester" column="SELECTED_CREDIT_SEMESTER" type="double"/>
+  <property name="hadcreditsemester" column="HAD_CREDIT_SEMESTER" type="double"/>
+  <property name="hadcreditratesemester" column="HAD_CREDITRATE_SEMESTER" type="double"/>
+ </class>
+</hibernate-mapping>

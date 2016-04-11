@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.sys.grades.bean">
+	<class name="GradeSearchByGroup" table="GRADE_SEARCHBYGROUP">
+		<composite-id>
+			<key-property name="department" column="DEPARTMENT" type="string" />
+			<key-property name="majorNum" column="MAJOR" type="string" />
+			<key-property name="grade" column="GRADE" type="int" />
+			<key-property name="semester" column="SEMESTER" type="int" />
+		</composite-id>
+		<property name="gpa" column="GPA" type="double" />
+		<property name="avg" column="AVG" type="double" />
+		<property name="selected" column="SELECTED" type="double" />
+		<property name="had" column="HAD" type="double" />
+		<property name="hadRate" column="HADRATE" type="double" />
+	</class>
+
+</hibernate-mapping>
